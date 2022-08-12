@@ -26,3 +26,12 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+
+async function showServerMessage() {
+    const responseFromServer = await fetch('/hello');
+    const message = await responseFromServer.json();
+    console.log(message);
+    const helloCon = document.getElementById('welcome-message');
+    helloCon.innerText = message;
+}
