@@ -32,6 +32,9 @@ async function showServerMessage() {
     const responseFromServer = await fetch('/hello');
     const message = await responseFromServer.json();
     console.log(message);
-    const helloCon = document.getElementById('welcome-message');
-    helloCon.innerText = message;
+    // Pick a random message.
+    const message = messageJson[Math.floor(Math.random() * messageJson.length)];
+    const welcomeContainer = document.getElementById('welcome-message');
+    welcomeContainer.innerText = message;
+
 }
