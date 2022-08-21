@@ -21,6 +21,21 @@
       <p> Languages that I'm currently learning/know:</p>
       <button onclick="addRandomGreeting()">Click here</button>
       <div id="greeting-container"></div>
+
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <p>Type some text:</p>
+        <textarea name="message"></textarea>
+        <br/>
+        <p>Upload an image:</p>
+        <input type="file" name="image">
+        <br/><br/>
+        <button>Submit</button>
+      </form>
+  
+      <p><a href="/list-images">Click here to see all of the uploaded images!</a></p>
+      
     </div>
+  </body>
+</html>
   </body>
 </html>
