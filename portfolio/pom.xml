@@ -16,7 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>YOUR_PROJECT_ID_HERE</googleCloudProjectId>
+    <googleCloudProjectId>mthasin-sps-summer22</googleCloudProjectId>
   </properties>
 
   <dependencies>
@@ -109,3 +109,4 @@
     </plugins>
   </build>
 </project>
+
